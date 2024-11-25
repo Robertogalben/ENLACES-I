@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Parisienne&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Parisienne&family=Satisfy&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Paris</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        form{
+            border: 2px solid darkgoldenrod;
+            border-radius: 20px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: black;
+            text-align: right;
+        }
+        label{
+            font-family: "Caveat";
+            color: cornsilk;
+            size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Café París</h1>
+
+    <p id="eslogan">Un momento de relax</p>
+    
+    <ul>
+        <li><a href="../index/index.html" >Principal</a></li>
+        <li><a href="../index/carta/carta.html" >Nuestra carta</a></li>
+        <li><a href="../index/contacto/contacto.html" >Contácte con nosotros</a></li>
+    </ul>
+    
+    <h2>
+        Contacte con nosotros
+    </h2>
+
+    <form action="“procesacontacto.php”" method="get">
+        <p>
+            <label>Nombre y Apellidos <input type="text" required placeholder="Escriba nombre y apellidos"></label>
+        </p>
+        <p>
+            <label>Fecha de Nacimiento <input type="date" required></label>
+        </p>
+        <p>
+            <label>
+                Suele consumir: <input type="radio" name="opcion" checked>Café
+                                <input type="radio" name="opcion">Té
+                                <input type="radio" name="opcion">Ambos
+            </label> 
+        </p>
+        <p>
+            <label>Numero de cafes al día <input type="number" min="1" max="5"></label>
+        </p>    
+        <p>
+            <label for="cafeteria">Seleccione su cafeteria: </label>
+            <select name="ciudad" id="cafeteria">
+                <option value="madrid" selected>Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="sevilla">Sevilla</option>
+            </select>
+        </p>   
+        <p>
+            <label><input type="checkbox" checked >Desea recibir informacion sobre novedades y ofertas</label>
+        </p>
+        <p>
+            <label><input type="submit" value="Enviar"></label>
+            <label><input type="reset" value="Reiniciar"></label>
+        </p>
+    </form>
+</body>
+</html>

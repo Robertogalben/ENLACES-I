@@ -1,0 +1,63 @@
+h1{ 
+    text-align: center;
+    font-family: "Parisienne";
+    font-size: 3em;
+    color: darkgoldenrod;
+    margin-bottom: 5px;}
+
+#eslogan{
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 2em;
+    color: cornsilk;
+    border: 2px, solid, cornsilk;
+    margin: 0 auto;
+    width: 40%;}
+
+h2{
+    color: #FFE4C4;
+    font-family: "Pacifico"}
+
+ul,li{
+    color: white;}
+
+a{
+    text-decoration: none;
+    font-size: 1,5em;
+    font-family: "Pacifico";
+    color:white;}
+
+a:hover{
+    font-weight: bold;}
+
+a:active{
+    color: darkgoldenrod;}
+
+.texto-normal{
+    font-family: "Satisfy";
+    font-size: 1,2em;
+    color: #FFE4C4;
+    text-align: justify;
+    line-height: 2;
+    padding: 30px;}
+
+#contenedor-logo{
+    text-align: center;}
+
+#logocafe{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;}
+
+body{
+    background-image: url(../index/images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-right: 20px;}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;}
